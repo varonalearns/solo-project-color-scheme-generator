@@ -1,0 +1,74 @@
+/*--------------- Default Styles (Mobile-first Approach)  --------------- */
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype supports variations"),
+            url("fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype-variations");
+    font-weight: 100 1000;
+}
+
+:root {
+    /* colors */
+    --white: #FFFFFF;
+
+    /* typography */
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #1F2937;
+}
+
+/*----- Header -----*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#color-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#color-selector input {
+    margin-bottom: 0.5rem;
+}
+
+#color-selector select {
+    padding: 0.5rem;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    color: var(--white);
+    background-color: #1F2937;
+    font-family: "Inter";
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #3D4B60;
+    color: var(--white);
+    padding: 0.75rem 1rem;
+    font-family: "Inter";
+}
+
+/*--------------- 481px width Screen  --------------- */
+
+@media only screen and (min-width: 481px) {
+
+    /*---------- Header -----------*/
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
