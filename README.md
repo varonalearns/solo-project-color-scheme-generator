@@ -28,7 +28,8 @@ Requirements:
 
 
 ### Useful resources
-- For fetching data from an API: [How to FETCH data from an API using JavaScript↩️](https://www.youtube.com/watch?v=37vxWr0WgQk&t=542s)
+- [How to FETCH data from an API using JavaScript↩️](https://www.youtube.com/watch?v=37vxWr0WgQk&t=542s)
+- [How to Fetch Data from an API Using the Fetch API in JavaScript](https://www.freecodecamp.org/news/how-to-fetch-data-from-an-api-using-the-fetch-api-in-javascript/)
 
 ## Author
 - Website - [Evalia Varona](https://www.evaliavarona.com)

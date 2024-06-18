@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eva's Color Generator</title>
+    <title>Color Scheme Generator</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <div id="color-selector">
-            <input type="color" for="scheme">
-            <select name="scheme" id="scheme">
-                <option value="Monochrome">Monochrome</option>
-                <option value="Monochrome-dark">Monochrome-dark</option>
-                <option value="Monochrome-light">Monochrome-light</option>
-                <option value="Analogic">Analogic</option>
-                <option value="Complement">Complement</option>
-                <option value="Analogic-complement">Analogic-complement</option>
-                <option value="Triad">Triad</option>
-            </select>
-        </div>
-        <button>Get color scheme</button>
+        <input type="color" for="scheme" id="seed-color">
+        <select name="scheme" id="scheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="mnalogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+        </select>
+        <button onclick="getData()">Get color scheme</button>
     </header>
-    <main>
+    <main id="colors">
+        <section>
+            <div class="color"></div>
+            <div class="clean"></div>
+        </section>
+        <section>
+            <div class="color"></div>
+            <div class="clean"></div>
+        </section>
+        <section>
+            <div class="color"></div>
+            <div class="clean"></div>
+        </section>
+        <section>
+            <div class="color"></div>
+            <div class="clean"></div>
+        </section>
+        <section>
+            <div class="color"></div>
+            <div class="clean"></div>
+        </section>
     </main>
-    <footer></footer>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>

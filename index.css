@@ -28,23 +28,20 @@ body {
 /*----- Header -----*/
 header {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
 }
 
-#color-selector {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
+input {
+    border-radius: 5px;
+    height: 37px;
+    margin-right: 1rem;
 }
 
-#color-selector input {
-    margin-bottom: 0.5rem;
-}
-
-#color-selector select {
+select {
+    width: 70%;
     padding: 0.5rem;
     border: 1px solid var(--white);
     border-radius: 5px;
@@ -58,17 +55,69 @@ button {
     border-radius: 5px;
     background-color: #3D4B60;
     color: var(--white);
-    padding: 0.75rem 1rem;
+    padding: 0.70rem 1rem;
     font-family: "Inter";
+    justify-self: center;
+    margin-top: 1rem;
 }
 
-/*--------------- 481px width Screen  --------------- */
+/*----- Main -----*/
+#colors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
 
-@media only screen and (min-width: 481px) {
+.color {
+    width: 20vw;
+    height: 80vh;
+}
+.clean {
+    color: var(--white);
+    text-align: center;
+}
+
+/*--------------- 600px width Screen  --------------- */
+
+@media only screen and (min-width: 600px) {
 
     /*---------- Header -----------*/
     header {
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-between;
+    }
+    
+    input {
+        margin-right: 0;
+    }
+    
+    select {
+        width: 50%;
+    }
+    
+    button {
+        margin-top: 0;
+    }
+}
+
+/*--------------- 900px width Screen  --------------- */
+
+@media only screen and (min-width: 900px) {
+
+    /*---------- Header -----------*/
+    header {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    /*----- Main -----*/
+    #colors {
+        width: 900px;
+        margin: auto;
+    }
+    .color {
+        width: 180px;
     }
 }
